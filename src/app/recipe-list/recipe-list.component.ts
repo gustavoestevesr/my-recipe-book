@@ -8,5 +8,9 @@ import { PratoComponent } from "../prato/prato.component";
   styleUrl: './recipe-list.component.scss'
 })
 export class RecipeListComponent {
+  pratoFavorito = 'macarrão';
 
+  capturarPrato(prato: string) {
+    this.pratoFavorito = prato;
+  }
 }

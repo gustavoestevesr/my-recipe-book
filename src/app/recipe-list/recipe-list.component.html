@@ -1,2 +1,6 @@
-<app-prato [prato]="'macarrão'"></app-prato>
-<app-prato [prato]="'batata frita'"></app-prato>
+<app-prato [prato]="'macarrão'" (pratoMudou)="capturarPrato($event)"></app-prato>
+<app-prato [prato]="'batata frita'" (pratoMudou)="capturarPrato($event)"></app-prato>
+<app-prato (pratoMudou)="capturarPrato($event)"></app-prato>
+
+
+<p>prato favorito: {{ pratoFavorito }}</p>
