@@ -1,0 +1,22 @@
+header {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1 {
+    font-family: 'Borel', cursive;
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+
+  nav {
+    display: flex;
+    gap: 32px;
+  }
+}
